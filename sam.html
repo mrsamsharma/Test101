@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To add a meta descriptions, here's how it goes: -->
+    <meta name="description" content="Hi, This is the first webpage ever created by Sam Felice!">
+    <!-- To add keywords for SEO: -->
+    <meta name="keywords" content="sams page, first page by sam, sam felice">
+    <!-- To tell a Search Engine which page to INDEX:  -->
+    <meta name="robots" content="INDEX, FOLLOW">
+    <!-- To tell a Search Engine which page to hide from indexing: -->
+    <meta name="robots" content="NOINDEX, NOFOLLOW">
+
+    <title>Sam's First Page</title>
+
+    <!-- To add a custom CSS file: -->
+    <link rel="stylesheet" href="sam.css">
+
+    <!-- This is how you include external JavaScript:  -->
+    <script src="sam.js"></script>
+</head>
+
+<body>
+    <!-- These are the 6 levels of Heading Tags used to give headings: -->
+    <h1>Hey Sam!</h1>
+    <h2>Hey Sam!</h2>
+    <h3>Hey Sam!</h3>
+    <h4>Hey Sam!</h4>
+    <h5>Hey Sam!</h5>
+    <h6>Hey Sam!</h6>
+
+    <!-- This is the paragraph tag to create a paragraph: -->
+    <p>This is your first webpage.</p>
+
+    <!-- To add dummy text use "Lorem" plus a number of words you require: -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, officia praesentium? <strong>This is strong and
+            bold</strong> Inventore facere architecto explicabo itaque voluptas, <em>This is emphasized.</em>
+        dignissimos et ad accusamus impedit sint expedita iste molestias minus, maiores pariatur voluptatum.</p>
+    <!-- Use Alt + Z to wrap the text that gets out of the screen in VS code-->
+
+    <!-- To create multiple elements with ease, name the element with asterisk followed by the number of elements you require e.g "p*4" would give me 4 paragraph elements -->
+
+    <p>1st Paragraph:<br>Here's a line break</p>
+    <!--This is how you break a line to enter a new line -->
+    <p>2nd Paragraph</p>
+    <hr> <!-- It's called Horizontal Ruler and it's create a horizontal line-->
+    <p>3rd Paragraph</p>
+    <p>4th Paragraph</p>
+
+    <!-- TIP -- Use CTRL + ENTER to jump to a new line in VS Code no matter where you are  -->
+
+    <hr>
+
+    <!-- Here's how we create anchor text containing external links-->
+    <a href="https://google.com">Click here to go to Google</a><br>
+
+    <!--To open it in new tab we add another attribute-->
+    <a href="https://google.com" target="_blank">Click here open Google in a New tab</a><br>
+
+    <!-- To open a webpage of our website -->
+    <a href="/example.html" target="_blank">Example Page created by Sam!</a><br>
+
+    <!-- Let's see how we add image from our local source -->
+    <img id="html-pic" src="html.png" alt="HTML logo"><br>
+
+    <!-- If image fails to load, the alt attribute's content is displayed -->
+    <img src="null.jpg" alt="when the image doesn't load I show up"><br>
+
+    <!-- Sourcing image from remote links -->
+    <img src="https://i.insider.com/5db2169f045a3125cb50e8d7?width=1000&format=jpeg&auto=webp"
+        alt="City's View across Lake"><br>
+
+    <!-- We can also adjust width and height of the image using special attributes, but it's not a good practice -->
+    <hr>
+    <h4>The image below is adjusted using HTML</h4><br>
+    <img" src="https://i.insider.com/5db2169f045a3125cb50e8d7?width=1000&format=jpeg&auto=webp"
+        alt="City's View across Lake" width="200" height="100"><br>
+        <hr>
+
+
+        <!-- Creaitng an unordered list   -->
+
+        <ul type="square">
+            <li>Hey</li>
+            <li>Sam</li>
+            <li>Nice to meet you</li>
+            <!-- This is how we nest list within a list -->
+            <ul type="disc">
+                <li>I am disc-type list</li>
+                <li>WOw I am happy</li>
+                <ul type="circle">
+                    <li>I am circle-type list</li>
+                    <li>HEHE</li>
+                </ul>
+            </ul>
+        </ul>
+
+        <!-- Creating ordered list -->
+        <ol>
+            <li>This is an ordered list with numbers</li>
+            <li>I am the second</li>
+            <ol type="A">
+                <li>This is an ordered list with ABC</li>
+                <li>I am B</li>
+                <ol type="I">
+                    <li>I am Roman list</li>
+                    <li>2nd roman</li>
+                </ol>
+            </ol>
+        </ol>
+        <ol>
+            <li>hey</li>
+            <li>second</li>
+            <ul>
+                <li>I am unordered list within an ordered list</li>
+            </ul>
+        </ol>
+        <hr>
+        <!-- Creating a Basic HTML Table  -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Occupation</th>
+                    <th>Hobby</th>
+                    <th>Blood Group</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sam</td>
+                    <td>19</td>
+                    <td>Student</td>
+                    <td>Chatting</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>Jason</td>
+                    <td>21</td>
+                    <td>Programmer</td>
+                    <td>Playing Piano</td>
+                    <td>O+</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>20</td>
+                    <td>Android Developer</td>
+                    <td>Rock Climbing</td>
+                    <td>AB+</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- creating scroll ups and down withing a webpage -->
+        <hr>
+        <a href="#html-pic">Click here to jump to the HTML logo</a>
+        <hr>
+
+        <!-- Let's create a form  -->
+        <form action="/url-where-you-want-to-submit-form-data">
+            <!-- We are using div element for line break as it's a block element -->
+            <div>
+                <!-- Use label tag to label your corresponding Labels for the input tag  -->
+                <!-- Label tag works best with for attribute having the same value as the id in input tag  -->
+                <label for="name">Name:
+                    <input type="text" name="myName" id="name" placeholder="Please Enter Your Name">
+                </label>
+            </div>
+            <div>
+                Age: <input type="number" name="myAge">
+            </div>
+            <div>
+                <!-- The name attribute is used for form handling in backend languages  -->
+                Email: <input type="email" name="myEmail">
+            </div>
+            <!-- to add a field for selecting date -->
+            <div>
+                Date: <input type="date" name="myDate">
+            </div>
+            <div>
+                <!-- Creating a checkbox that is required before submitting the form and is already checked -->
+                <label for="tnc">I agree to T&C:
+                    <input type="checkbox" name="I agree to T&C" required checked id="tnc">
+                </label>
+            </div>
+            <div>
+                <!-- Creating radio checkboxes requiring one input out of multiple options  -->
+                <label for="Male">Male <input id="Male" type="radio" name="myGender"></label>
+                <label for="Female">Female <input id="Female" type="radio" name="myGender"></label>
+                <label for="Other">Other <input id="Other" type="radio" name="myGender"></label>
+            </div>
+            <div>
+                <!-- To ask a paragraph or big amount of text as an input:  -->
+                Tell us about yourself: <br> <textarea name="myText" cols="50" rows="10"></textarea>
+            </div>
+            <!-- To create a variation of selection for user to selected out of multiple options:  -->
+            <div>
+                <label for="car">Your favourite car
+                    <select name="car" id="car">
+                        <option value="mstng">Ford Mustang</option>
+                        <option value="dge">Dodge Challenger</option>
+                        <option value="800cc" selected>Maruti 800</option>
+                        <option value="r8">Audi R8</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <!-- To submit data to the backend: -->
+                <input type="submit" value="Submit Now">
+            </div>
+            <div>
+                <!-- This is a reset button that resets the already filled form  -->
+                <input type="reset" value="Reset Form">
+            </div>
+        </form>
+
+        <!-- Inline and Block elements -->
+        <p style="border: 2px solid red;">This is a paragraph</p>
+        <span style="border: 2px solid red;">This is a span element</span>
+        <input style="border: 2px solid red;" type="text">
+        <div style="border: 2px solid red;">I am div</div><br>
+        <em style="border: 2px solid blue;">I am em </em>
+        <strong style="border: 2px solid pink;">I am strong</strong>
+        <a href="#" style="border: 2px solid grey;">Click here</a><br>
+        <img style="border: 5px solid black;" src="html.png" alt="">
+        <ol>
+            <li style="border: red;">I am a list</li><br>
+        </ol>
+        <label for="color"> Choose a color:
+            <select name="color" id="color" style="border: 2px solid red;">
+                <option value="red">Red</option>
+                <option value="pink">pink</option>
+                <option value="blue">blue</option>
+
+            </select>
+        </label>
+
+        <hr>
+        <!-- Id's and classes -->
+        <!-- Id is known as a unique identifier. Same id cannot be used simultanously across HTML  -->
+        <div id="myPara">This is a div element and can be identified using it's Id in CSS or JavaScript</div>
+        <!-- Class attribute is used in CSS to create a certain style and store it in it as a class name and later used in any HTML elements  -->
+        <p class="redBg">It's a paragraph with class which has not been yet styled via CSS</p>
+        <!-- We can add many classes in a single HTML element  -->
+        <p class="redBg blueMrgn blackTxt">multiple Classes in same element</p>
+
+        <!-- Shortcuts for creating elements with ID and Class -->
+        <!-- we can name the element and put a . to define class and # to define ID..e.g p#myPara.redbG.blueTxt  -->
+        <p id="myParagraph" class="redBg blueTxt">YO man I am a para again with an Id</p>
+
+        <!-- To create multiple element with ease of writing text between them: p*4 + <TAB> -->
+
+        <hr>
+        <!-- HTML Entities  -->
+        <!-- Entities are special keyword to write specific symbols, characters or language reserved characters  -->
+        <div id="entities">
+            <p>This is a sentence with multiple space using Entities &nbsp; &nbsp; &nbsp; since HTML chop off any extra space !</p>
+            <p>Pound is written like this &pound;</p>
+            <p>Copyright is written this way &copy;</p>
+            <p>Greater than and less than is written like this &lt;p&gt;</p>
+            <p>Another character &rAarr;</p>
+            <p>Another character &frac14;</p>
+            <!-- If you copy and paste the empty character in whatsapp chat and sent it, It will send an empty message  -->
+            <p>Empty character is &#8203;</p>
+        </div>
+
+        <!-- Semantic Tags are tags that specify the purpose of elements and the type of content inside them in a human-machine readble way -->
+
+        <details>
+            <summary>it can be a summary or used as heading for details tag</summary>
+            I am the detail!
+        </details>
+        
+        <figure>
+            <img src="original.jpg" alt="Guitar signed by Ed Sheeran">
+            <figcaption>An acoustic guitar signed by Ed Sheeran!</figcaption>
+        </figure>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+            </ul>
+        </nav>
+
+</body>
+
+</html>
